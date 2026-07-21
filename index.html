@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quinten Weijer — AI interface</title>
+  <meta name="description" content="Portfolio van Quinten Weijer, in gesprek met een AI-chatinterface. Typ /help om zijn projecten te zien." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand__dot"></span>
+      QUINTEN.WEIJER<span class="brand__cursor" aria-hidden="true"></span>
+    </a>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="nav-panel" aria-label="Menu openen">
+      <span class="menu-toggle__bars"><span></span><span></span><span></span></span>
+    </button>
+  </header>
+
+  <div class="nav-scrim" data-nav-scrim></div>
+  <nav class="nav-panel" id="nav-panel" data-nav-panel aria-label="Hoofdmenu">
+    <p class="nav-panel__eyebrow">Navigatie</p>
+    <ul class="nav-panel__list">
+      <li><a href="index.html" aria-current="page">Home <span class="tag">// chat</span></a></li>
+      <li><a href="projecten.html">Projecten <span class="tag">// cards</span></a></li>
+      <li><a href="over-mij.html">Over mij <span class="tag">// profiel</span></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1 class="hero__title">Hoi, ik ben <span class="accent">Quinten</span>. Ik leer AI door het te bouwen.</h1>
+      <p class="hero__lede">
+        Dit portfolio is zelf een klein AI-experiment: praat met de interface hieronder om
+        mijn projecten te zien. Geen backend, geen build-stap — puur HTML, CSS en JavaScript.
+      </p>
+      <p class="hero__boot" data-boot-text aria-live="polite"><span class="cursor" aria-hidden="true"></span></p>
+    </section>
+
+    <section class="chat" aria-label="Chat met Quinten">
+      <div class="chat__frame">
+        <div class="chat__titlebar">
+          <span class="dots"><span></span><span></span><span></span></span>
+          quinten@interface — sessie actief
+        </div>
+
+        <div class="chat__log" data-chat-log aria-live="polite">
+          <div class="msg msg--ai">
+            <div class="msg__avatar">Q</div>
+            <div class="msg__bubble">
+              <p>Welkom. Ik ben de AI-versie van Quinten — typ een commando om te beginnen.</p>
+              <p>Nieuw hier? Begin met <code>/help</code>.</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="chat__form" data-chat-form>
+          <label for="chat-input" class="visually-hidden">Typ een commando</label>
+          <span class="chat__prompt" aria-hidden="true">&gt;</span>
+          <input
+            id="chat-input"
+            class="chat__input"
+            type="text"
+            autocomplete="off"
+            placeholder="Typ /help om te beginnen..."
+            data-chat-input
+          />
+          <button class="chat__send" type="submit">Verstuur</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="chat__hints" aria-label="Snelle commando's">
+      <button type="button" data-chat-hint>/help</button>
+      <button type="button" data-chat-hint>/projecten</button>
+      <button type="button" data-chat-hint>/quinten</button>
+      <button type="button" data-chat-hint>/skills</button>
+      <button type="button" data-chat-hint>/contact</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Quinten Weijer</span>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>
