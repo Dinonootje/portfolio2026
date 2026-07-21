@@ -165,8 +165,7 @@
     ul.className = "contact-list";
     ul.innerHTML =
       '<li><a href="mailto:' + c.email + '">' + c.email + "</a></li>" +
-      '<li><a href="' + c.github + '" target="_blank" rel="noopener">GitHub</a></li>' +
-      '<li><a href="' + c.linkedin + '" target="_blank" rel="noopener">LinkedIn</a></li>';
+      '<li><a href="' + c.github + '" target="_blank" rel="noopener">GitHub</a></li>';
     wrap.appendChild(ul);
     return wrap;
   }

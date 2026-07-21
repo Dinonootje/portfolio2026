@@ -6,52 +6,36 @@
  */
 window.PROJECTS = [
   {
-    title: "Prompt Playground",
+    title: "Klantenbeheer",
     description: "Experimenteeromgeving om te leren hoe verschillende prompts het gedrag van een AI-model beinvloeden.",
     accent: "var(--purple)",
-    tags: ["JavaScript", "AI", "Leerproject"],
-    status: "In ontwikkeling",
-    link: "#"
+    tags: ["CSS", "HTML", "Python"],
+    status: "Klaar",
+    link: "klantenbeheer.html"
   },
   {
-    title: "Chat Widget UI",
+    title: "4 op een rij",
     description: "Herbruikbare chatinterface-component, gebouwd als basis voor toekomstige AI-integraties.",
     accent: "var(--blue)",
-    tags: ["HTML", "CSS", "UI"],
-    status: "Live",
-    link: "#"
+    tags: ["Python", "Terminal"],
+    status: "Klaar",
+    link: "4opeenrij.html"
   },
   {
-    title: "Dataset Verkenner",
+    title: "Klantenbeheer",
     description: "Klein hulpmiddel om openbare datasets te doorzoeken en te visualiseren als voorbereiding op ML-experimenten.",
     accent: "var(--yellow)",
-    tags: ["Python", "Data", "Leerproject"],
-    status: "In ontwikkeling",
-    link: "#"
-  },
-  {
-    title: "Portfolio AI-interface",
-    description: "Dit portfolio zelf: een chat-gestuurde interface met slash-commando's, gebouwd in vanilla JS.",
-    accent: "var(--purple)",
-    tags: ["JavaScript", "CSS", "Design"],
-    status: "Live",
-    link: "#"
+    tags: ["HTML", "CSS", "Python"],
+    status: "Klaar",
+    link: "projectbord.html"
   }
 ];
 
-/*
- * Contactgegevens — placeholders, later invullen.
- */
 window.CONTACT = {
-  email: "jouw@email.nl",
-  github: "https://github.com/jouw-gebruikersnaam",
-  linkedin: "https://linkedin.com/in/jouw-naam"
+  email: "quintenlweijer@gmail.com",
+  github: "https://github.com/Quintda1",
 };
 
-/*
- * Vaardigheden voor het /skills commando.
- * "learning: true" toont een gele "leert nog"-badge.
- */
 window.SKILLS = [
   { name: "HTML & CSS", learning: false },
   { name: "JavaScript", learning: false },
