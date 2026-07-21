@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4 op een rij — Quinten Weijer</title>
+  <meta name="description" content="[Korte omschrijving van het project voor zoekmachines.]" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand__dot"></span>
+      QUINTEN.WEIJER<span class="brand__cursor" aria-hidden="true"></span>
+    </a>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="nav-panel" aria-label="Menu openen">
+      <span class="menu-toggle__bars"><span></span><span></span><span></span></span>
+    </button>
+  </header>
+
+  <div class="nav-scrim" data-nav-scrim></div>
+  <nav class="nav-panel" id="nav-panel" data-nav-panel aria-label="Hoofdmenu">
+    <p class="nav-panel__eyebrow">Navigatie</p>
+    <ul class="nav-panel__list">
+      <li><a href="index.html">Home <span class="tag">// chat</span></a></li>
+      <li><a href="projecten.html" aria-current="page">Projecten <span class="tag">// cards</span></a></li>
+      <li><a href="over-mij.html">Over mij <span class="tag">// profiel</span></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="project-detail">
+      <a class="project-detail__back" href="projecten.html">← Terug naar projecten</a>
+
+      <p class="project-detail__eyebrow">// project</p>
+      <h1 class="project-detail__title">4 op een rij</h1>
+      <p class="project-detail__lede">
+        Dit is een zelfgekozen 4-op-een-rijspel in Python waarin de speler tegen een computer speelt.
+      </p>
+
+      <div class="project-detail__meta">
+        <span class="project-card__status project-card__status--live">[Status, bv. Live]</span>
+        <div class="project-card__tags">
+          <span>[Tag 1]</span>
+          <span>[Tag 2]</span>
+          <span>[Tag 3]</span>
+        </div>
+      </div>
+
+      
+        
+        <div class="project-detail__image">
+          <img src="images/4 op een rij.png" alt="Screenshot van 4 op een rij" />
+        </div>
+      
+       
+      <div class="project-detail__section">
+        <h2>Introductie</h2>
+        <p>
+          Het project is een tekstgebaseerde versie van 4 op een rij, gemaakt als vrij gekozen programmeerproject. Het doel was om een spel te bouwen waarin een speler het opneemt tegen een slimme AI.
+        </p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Doel van het project</h2>
+        <p>
+          Ik wilde onderzoeken hoe een computer zelfstandig de beste zet kan bepalen. Het beoogde resultaat was een werkend spel dat winst, verlies en gelijkspel herkent en waarin de AI tactische zetten maakt.
+        </p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Wat heb ik ervan geleerd</h2>
+        <p>
+          Ik heb geleerd werken met functies, lijsten, spelregels, invoercontrole en het kopiëren van een speelbord.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Quinten Weijer</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
